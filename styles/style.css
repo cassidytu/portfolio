@@ -27,6 +27,15 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-family: Unbounded;
+    margin-bottom: -10px;
+    font-size: 16px;
+    /* font-weight: 800; */
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+}
+
 header{
     grid-area: header;
     font-family: Unbounded, serif;
@@ -55,6 +64,8 @@ header{
 
 #footer{
     grid-area: footer;
+    margin: 10%;
+    padding-top: 10%;
 }
 
 .main{
@@ -123,8 +134,25 @@ button:focus, button:hover {
     gap: 5%;
 }
 
+.columnLayout {
+    grid-template-columns: 0.5fr 0.4fr;
+    display: grid;
+    gap: 10%;
+    padding: 10%;
+}
+
+.columnText {
+    display: flex;
+    align-items: center;
+}
+
 .caseStudyInfo {
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     display: grid;
     gap: 5%;
+}
+
+#profileImg {
+    border-radius: 10px;
+    width:100%;
 }
