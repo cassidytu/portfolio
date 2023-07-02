@@ -18,18 +18,20 @@
     <body>
         <header>
             <nav class="navMenu">
-                <a href="index.html">Works</a>
+                <a href="index.html" style="float: left"><img src="assets/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
                 <a href="about.html">About</a>
+                <a href="index.html">Works</a>
             </nav>
         </header>
         <div class="main">
             <div>
-                <h1>Hello again, I'm <span style="color:#724993;"><i>Cassidy</i></span> 🧸</h1>
+                <h4>Let me re-introduce myself</h4>
+                <h1>Hello, I'm <span style="color:#724993;"><i>Cassidy</i></span> 🧸</h1>
                 <h2> A 
                     <span
                        class="txt-rotate"
                        data-period="2000"
-                       data-rotate='[ "Web Designer", "Researcher", "Graphic Designer"]'>
+                       data-rotate='[ "Web Developer", "Graphic Designer", "Content Writer", "Research Interviewer"]'>
                     </span>
                 </h2>
                 <p>As a creative, I love to explore different avenues of art and delve into a range of topics. Take a look at a few past projects I've done!</p>
@@ -50,14 +52,45 @@
                     <a href="https://trinhqale.github.io/AM191A-group-project/" target="_blank" rel="noopener noreferrer"><img class="projImg" src="assets/girls.png"></a>
                     <div class="projName">
                         <div>
-                            <p>Web Developer/Designer, Project Manager, Illustrator</p>
+                            <p>Web Developer/Designer, Project Manager, Illustrator, Content Writer</p>
                             <h3><span style="font-family:Unbounded;">Empowering</span> UCLA <span style="font-family:Unbounded;">female</span> faculty around transportation and work-life balance.</h3>
                             <a href="https://trinhqale.github.io/AM191A-group-project/" target="_blank" rel="noopener noreferrer"><button>See More</button></a>
                         </div>
                     </div>
                 </div>
+                <div id="projContainer">
+                    <div class="proj">
+                        <img class="projImg" src="assets/magazine.png">
+                        <div class="projName">
+                            <div>
+                                <p>Editor, Project Manager, Magazine Designer, Content Writer, Interviewer</p>
+                                <h3><span style="font-family:Unbounded;">Highlighting Oceania</span> narratives and their environment.</h3>
+                                <!-- <a href="https://jazzimpactla.cargo.site/" target="_blank" rel="noopener noreferrer"><button>See More</button></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="footer">
+                <div id="seeMore">
+
+                    <div class="moreProj">
+                        <a href="planit.html"><img class="projImg" src="assets/planit/planit.png"></a>
+                        <div>
+                            <p>Making your travel plans <span style="font-family:Unbounded;">easier</span>.</p>
+                            <button onclick="location.href = 'planit.html';">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="moreProj">
+                        <a href="ecohero.html"><img class="projImg" src="assets/ecohero/ecohero.png" style="width:80%"></a>
+                        <div>
+                            <p><span style="font-family:Unbounded;">Inspiring</span> your green journey one habit at a time.</p>
+                            <button onclick="location.href = 'ecohero.html';">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <p>Designed + Coded with ♥️ in Los Angeles</p>
+                <button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
             </div>
-            <div id="footer"></div>
         </div>
         <script src="js/init.js"></script>
     </body>

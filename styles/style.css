@@ -36,36 +36,39 @@ h4 {
     /* letter-spacing: 2px; */
 }
 
+.bolded {
+    font-weight: 800;
+}
+
 header{
     grid-area: header;
     font-family: Unbounded, serif;
 }
 
 .navMenu {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-  }
+    /* position: absolute; */
+    margin-top: 4%;
+    /* left: 50%; */
+}
   
-  .navMenu a {
+.navMenu a {
+    float: right;
     color: #333333;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 500;
-    display: inline-block;
+    text-align: center;
+    display: inline;
     width: 160px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
+}
   
-  .navMenu a:hover {
+.navMenu a:hover {
     color: #724993;
-  }
+}
 
 #footer{
     grid-area: footer;
-    margin: 10%;
+    margin-bottom:2%;
     padding-top: 10%;
+    text-align: center;
 }
 
 .main{
@@ -138,7 +141,8 @@ button:focus, button:hover {
     grid-template-columns: 0.5fr 0.4fr;
     display: grid;
     gap: 10%;
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .columnText {
@@ -152,7 +156,33 @@ button:focus, button:hover {
     gap: 5%;
 }
 
+#aboutColumn {
+    grid-template-columns: 0.5fr 1fr;
+    display: grid;
+    gap: 8%;
+    padding-left: 8%;
+    padding-right:2%;
+}
+
 #profileImg {
     border-radius: 10px;
     width:100%;
 }
+
+#scrollButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  }
+
+  #seeMore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin: 5%;
+  }

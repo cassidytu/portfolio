@@ -13,8 +13,9 @@
     <body>
         <header>
             <nav class="navMenu">
-                <a href="index.html">Works</a>
+                <a href="index.html" style="float: left"><img src="assets/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
                 <a href="about.html">About</a>
+                <a href="index.html">Works</a>
             </nav>
         </header>
         <div class="main">
@@ -64,6 +65,7 @@
                         </div>
                     </div>
                     <div class="columnLayout">
+                        <img src="assets/exotic/word cloud.png">
                         <div class="columnText">
                             <div>
                                 <h4>Product Reaction Cards Word Cloud</h4>
@@ -78,6 +80,7 @@
                                 <p>We illustrated our persona's, a novice college student astronomer, journey as they used the EXOTIC tutorial for the first time to fully understand and empathize with their pain points and find opportunities for improvement.</p>
                             </div>
                         </div>
+                        <img src="assets/exotic/experience map.png" style="width:100%;">
                     </div>
                     <h2>Key Takeaways</h2>
                     <div class="gridLayout">
@@ -129,10 +132,24 @@
                 </div>
             </div>
             <div id="footer">
-                <button></button>
-                <button>
-
-                </button>
+                <div id="seeMore">
+                    <div class="moreProj">
+                        <a href="ecohero.html"><img class="projImg" src="assets/ecohero/ecohero.png" style="width:80%"></a>
+                        <div>
+                            <p><span style="font-family:Unbounded;">Inspiring</span> your green journey one habit at a time.</p>
+                            <button onclick="location.href = 'ecohero.html';">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="moreProj">
+                        <a href="planit.html"><img class="projImg" src="assets/planit/planit.png"></a>
+                        <div>
+                            <p>Making your travel plans <span style="font-family:Unbounded;">easier</span>.</p>
+                            <button onclick="location.href = 'planit.html';">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <p>Designed + Coded with ♥️ in Los Angeles</p>
+                <button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
             </div>
         </div>
         <script src="js/init.js"></script>

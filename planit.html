@@ -13,8 +13,9 @@
     <body>
         <header>
             <nav class="navMenu">
-                <a href="index.html">Works</a>
+                <a href="index.html" style="float: left"><img src="assets/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
                 <a href="about.html">About</a>
+                <a href="index.html">Works</a>
             </nav>
         </header>
         <div class="main">
@@ -147,10 +148,24 @@
                 </div>
             </div>
             <div id="footer">
-                <button></button>
-                <button>
-
-                </button>
+                <div id="seeMore">
+                    <div class="moreProj">
+                        <a href="exotic.html"><img class="projImg" src="assets/exotic/exotic.png"></a>
+                        <div>
+                            <p>Finding an <span style="font-family:Unbounded;">effortless approach</span> to astronomy for beginners.</p>
+                            <button onclick="location.href = 'exotic.html';">See More</button>
+                        </div>
+                    </div>
+                    <div class="moreProj">
+                        <a href="other.html"><img class="projImg" src="assets/jazz.png"></a>
+                        <div>
+                            <p>Look at my projects <span style="font-family:Unbounded;">outside of UX</span>!</p>
+                            <button onclick="location.href = 'other.html';">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <p>Designed + Coded with ♥️ in Los Angeles</p>
+                <button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
             </div>
         </div>
         <script src="js/init.js"></script>

@@ -18,16 +18,21 @@
     <body>
         <header>
             <nav class="navMenu">
-                <a href="index.html">Works</a>
+                <a href="index.html" style="float: left"><img src="assets/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
                 <a href="#">About</a>
+                <a href="index.html">Works</a>
             </nav>
         </header>
         <div class="main">
-            <div class="columnLayout">
+            <div>
+                <h4>ABOUT ME</h4>
+                <h1>Hello again, I'm <span style="color:#724993;"><i>Cassidy</i></span> 🧸</h1>
+            </div>
+            
+            <div id="aboutColumn">
                 <img id="profileImg" src="assets/profile.jpg">
-                <div class="columnText">
+                <div>
                     <div>
-                        <h1>Hey, I'm <span style="color:#724993;"><i>Cassidy</i></span> 🧸</h1>
                         <h2> A 
                         <span
                             class="txt-rotate"
@@ -35,12 +40,21 @@
                             data-rotate='[ "Web Designer", "Researcher", "Graphic Designer"]'>
                         </span>
                         </h2>
-                        <p>As a creative, I love to explore different avenues of art and delve into a range of topics. Take a look at a few past projects I've done!</p>
+                        <p>I'm a designer and creative based in Los Angeles.<br><br>
+                        As a UX designer with a background in Cognitive Science and a minor in Digital Humanities from UCLA, my passion lies in crafting user-centered experiences that seamlessly blend human behavior and technology. Along with my Specialization in Computation, I bring a unique perspective to design, psychology, and technology. I understand human cognition, perception, and decision-making, enabling me to create intuitive interfaces that align with user tendencies. My knowledge of digital humanities allows me to incorporate empathy, storytelling, and cultural context, crafting experiences that resonate on a deeper level. By merging my academic background with practical UX design experience, I hope to bridge the gap between user needs and technological possibilities and make meaningful digital spaces.</p>
                     </div>
                 </div>
             </div>
-            
-            <div id="footer"></div>
+            <div style="text-align: right;">
+                <h1>Say <span style="color:#724993;"><i>hello</i></span> back!</h1>
+                <p style="margin-top:-3%;">I would love to discuss anything from design to food and music.</p>
+                <a href="mailto: cassidyytu@gmail.com" target="_blank" rel="noopener noreferrer"><img src="assets/email.png" style="width:50px"></a>
+                <a href="https://www.linkedin.com/in/cassidy-tu-092409226/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" style="width:50px"></a>
+            </div>
+            <div id="footer">
+                <p>Designed + Coded with ♥️ in Los Angeles</p>
+                <button onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
+            </div>
         </div>
         <script src="js/init.js"></script>
     </body>
