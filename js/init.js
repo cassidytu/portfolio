@@ -70,8 +70,12 @@ function vhToPixels (vh) {
 function scrollFunction() {
   if (document.body.scrollTop > vhToPixels(100) || document.documentElement.scrollTop > vhToPixels(100)) {
     mybutton.style.display = "block";
+    setTimeout(function(){
+      mybutton.style.animationPlayState = "paused";
+    }, 1500);
   } else {
     mybutton.style.display = "none";
+    mybutton.style.animationPlayState = "running";
   }
 }
 
