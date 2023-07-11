@@ -36,6 +36,12 @@ h4 {
     /* letter-spacing: 2px; */
 }
 
+#titleText {
+    font-size: 12vw;
+    line-height: 0.95;
+    text-align: left;
+}
+
 .bolded {
     font-weight: 800;
 }
@@ -228,3 +234,39 @@ button:hover {
     padding-left: 8%;
     padding-right: 8%
   }
+
+#homeHero {
+    height:100vh; 
+    background-color:#F7F6F3; 
+    margin-left:-10%; 
+    margin-right:-10%; 
+    margin-top:-5%; 
+    color:#724993;
+}
+
+@-webkit-keyframes rotate {
+    0% {transform: rotate(-30deg)}
+    to {transform: rotate(30deg)}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(-30deg);}
+    to {transform: rotate(30deg);}
+}
+
+.rotate {
+    animation: rotate 1.6s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+#happyFace {
+    width: 10vw;
+    position: absolute;
+    left: 45vw;
+    bottom: 55vh;
+    z-index: 2;
+}
+#happyFace:hover {
+    background-image: url("assests/smileyface.png");
+}
+
