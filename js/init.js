@@ -147,3 +147,27 @@ if (image != null) {
       image.src = "assets/happy.png";
   })
 }
+
+// hover effect for arrow on home page
+var arrow = document.getElementById("arrowIcon");
+var stars = document.getElementById("arrowStars");
+
+//Now, we need to add an Event Listener to listen when the image gets mouse over.
+if (arrow != null) {
+  arrow.addEventListener('mouseover', function(){
+    stars.style.display = "block";
+    stars.classList.add('rotate');
+
+  })
+  arrow.addEventListener('mouseout', function(){
+    stars.style.display = "none";  
+  })
+
+  arrow.addEventListener('click', function(){
+    window.scrollBy({
+      top: window.innerHeight, 
+      left: 0, 
+      behavior: "smooth",
+    });  
+  })
+}
