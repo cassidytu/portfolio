@@ -141,10 +141,10 @@ var image = document.getElementById("happyFace");
 //Now, we need to add an Event Listener to listen when the image gets mouse over.
 if (image != null) {
   image.addEventListener('mouseover', function(){
-    image.src = "assets/smilely.png";
+    image.src = "assets/icons/smilely.png";
   })
   image.addEventListener('mouseout', function(){
-      image.src = "assets/happy.png";
+      image.src = "assets/icons/happy.png";
   })
 }
 
