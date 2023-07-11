@@ -49,7 +49,7 @@ h4 {
     text-align: center;
 }
 
-.bolded {
+b {
     font-weight: 800;
 }
 
@@ -170,12 +170,16 @@ button:hover {
     grid-template-columns: 0.75fr 1fr;
     display: grid;
     gap: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .columnLayoutLeft {
     grid-template-columns: 1fr 0.75fr;
     display: grid;
     gap: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .columnText {
@@ -266,7 +270,7 @@ button:hover {
 #happyFace {
     width: 12vw;
     position: absolute;
-    left: 58%;
+    left: 60%;
     bottom: 58%;
     z-index: 2;
 }
@@ -320,3 +324,22 @@ button:hover {
 .to-slide-up {
     opacity: 0;
 }
+
+  mark {
+    --color1: #BDC8FF;
+    --color2: #BDC8FF;
+    --height: 100%;    
+    all: unset;
+    background-image: linear-gradient(var(--color1), var(--color2));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 var(--height);
+    animation: highlight 900ms 1 ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; 
+  }
+  @keyframes highlight {
+    to {
+      background-size: 100% var(--height);
+    }
+  }

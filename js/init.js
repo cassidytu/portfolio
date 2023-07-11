@@ -95,14 +95,34 @@ function topFunction() {
     }
   }
 
+// mark animation on scroll
+(function (window, document) {
+  const markers = document.querySelectorAll('mark');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.8
+  });
+  
+  markers.forEach(mark => {
+    observer.observe(mark);
+  });
+})(window, document);
+
 // hover effect for happy face
 var image = document.getElementById("happyFace");
 
 //Now, we need to add an Event Listener to listen when the image gets mouse over.
-
-image.addEventListener('mouseover', function(){
-  image.src = "assets/smilely.png";
-})
-image.addEventListener('mouseout', function(){
-    image.src = "assets/happy.png";
-})
+if (image != null) {
+  image.addEventListener('mouseover', function(){
+    image.src = "assets/smilely.png";
+  })
+  image.addEventListener('mouseout', function(){
+      image.src = "assets/happy.png";
+  })
+}
