@@ -80,6 +80,22 @@ function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// slide animation on scroll
+	var upDivs = document.getElementsByClassName('to-slide-up');
+
+	window.addEventListener('scroll', animation);
+
+	function animation (e){
+    for(var i = 0; i < upDivs.length; i++){
+      var upDivs_pos = upDivs[i].offsetTop;
+		  var window_pos = window.pageYOffset;
+		  if(window_pos > upDivs_pos-500) {
+			  upDivs[i].classList.add('fade-in');
+		  }
+    }
+  }
+
+// hover effect for happy face
 var image = document.getElementById("happyFace");
 
 //Now, we need to add an Event Listener to listen when the image gets mouse over.
@@ -89,4 +105,4 @@ image.addEventListener('mouseover', function(){
 })
 image.addEventListener('mouseout', function(){
     image.src = "assets/happy.png";
-  })
+})
