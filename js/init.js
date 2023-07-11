@@ -79,3 +79,14 @@ function scrollFunction() {
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+var image = document.getElementById("happyFace");
+
+//Now, we need to add an Event Listener to listen when the image gets mouse over.
+
+image.addEventListener('mouseover', function(){
+  image.src = "assets/smilely.png";
+})
+image.addEventListener('mouseout', function(){
+    image.src = "assets/happy.png";
+  })
