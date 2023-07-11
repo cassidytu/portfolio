@@ -260,7 +260,7 @@ button:hover {
 #happyFace {
     width: 12vw;
     position: absolute;
-    left: 58vw;
+    left: 59vw;
     bottom: 60vh;
     z-index: 2;
 }
@@ -297,12 +297,12 @@ button:hover {
 }
 
 @keyframes fadeIn {
-    0% {opacity:0; transform:translateY(10%);}
+    0% {opacity:0; transform:translateY(30%);}
     100% {opacity:1; transform:translateY(0%);}
 }
   
   @-webkit-keyframes fadeIn {
-    0% {opacity:0; -webkit-transform: translateY(10%);}
+    0% {opacity:0; -webkit-transform: translateY(30%);}
     100% {opacity:1; -webkit-transform: translateY(0%);}
 }
 
