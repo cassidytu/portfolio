@@ -18,8 +18,13 @@ var TxtRotate = function(el, toRotate, period) {
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
+
+    if (this.txt == "你好" || this.txt == "你") {
+      this.el.innerHTML = '<span style="font-family:Noto Sans Traditional Chinese; font-weight:500" class="wrap">'+this.txt+'<span style="font-family:Unbounded">!</span>'+'</span>';
+    } else {
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    }
   
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   
     var that = this;
     var delta = 300 - Math.random() * 100;
@@ -61,28 +66,37 @@ var TxtRotate = function(el, toRotate, period) {
 let mybutton = document.getElementById("scrollButton");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > vhToPixels(100) || document.documentElement.scrollTop > vhToPixels(100)) {
+    console.log("HERE");
+    mybutton.style.display = "block";
+    console.log("CHECK");
+  } else {
+    console.log("CHECKKKKKKK");
+    mybutton.style.display = "none";
+    console.log("CHECKKKKKKKKKKKKKKK");
+  }
+}
 
 function vhToPixels (vh) {
     return Math.round(window.innerHeight / (100 / vh));
-}
-
-function scrollFunction() {
-  if (document.body.scrollTop > vhToPixels(100) || document.documentElement.scrollTop > vhToPixels(100)) {
-    mybutton.style.display = "block";
-    setTimeout(function(){
-      mybutton.style.animationPlayState = "paused";
-    }, 1500);
-  } else {
-    mybutton.style.display = "none";
-    mybutton.style.animationPlayState = "running";
-  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+window.onscroll = function(ev) {
+  scrollFunction();
+    if ((window.innerHeight + Math.ceil(window.pageYOffset + 1)) >= document.body.offsetHeight) {
+      mybutton.classList.add('shake');
+      setTimeout(function(){
+        mybutton.classList.remove('shake');
+      }, 1000);
+      console.log("you're at the bottom of the page");
+  };
+};
 
 // slide animation on scroll
 	var upDivs = document.getElementsByClassName('to-slide-up');

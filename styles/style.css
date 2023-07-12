@@ -301,7 +301,7 @@ button:hover {
 }
 
 #scrollButton {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 5%;
     right: 5%;
@@ -309,11 +309,15 @@ button:hover {
     cursor: pointer; /* Add a mouse pointer on hover */
     background-color:#724993;
     color: #F7F6F3;
+  }
+
+.shake {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     perspective: 1000px;
-  }
+    animation-play-state: running;
+}
   
 @keyframes shake {
     10%, 90% {transform: translate3d(-1px, 0, 0);}
@@ -340,8 +344,7 @@ button:hover {
   }
 
 #homeHero {
-    height:80vh; 
-    background-color:#F7F6F3; 
+    height:80vh;  
     margin-left:-10%; 
     margin-right:-10%; 
     color:#333;
@@ -373,6 +376,7 @@ button:hover {
     left: 0%;
     bottom: 0%;
     z-index: 2;
+    cursor: pointer;
 }
 
 #arrowIcon {
@@ -381,6 +385,7 @@ button:hover {
     margin-right: auto;
     width: 15%;
     display: block;
+    cursor: pointer;
 }
 
 #arrowStars {
