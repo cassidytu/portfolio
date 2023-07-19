@@ -68,7 +68,6 @@ let mybutton = document.getElementById("scrollButton");
 // When the user scrolls down 20px from the top of the document, show the button
 function scrollFunction() {
   if (document.body.scrollTop > vhToPixels(100) || document.documentElement.scrollTop > vhToPixels(100)) {
-    console.log("HERE");
     mybutton.style.display = "block";
     console.log("CHECK");
   } else {
@@ -133,7 +132,7 @@ window.onscroll = function(ev) {
 })(window, document);
 
 function onLinkClick() {
-  document.getElementsById('works').scrollIntoView();
+  document.getElementsById('works').scrollIntoView({behavior:'smooth'});
 };
 
 // //dropdown button in nav bar
