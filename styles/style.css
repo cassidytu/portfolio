@@ -42,15 +42,17 @@ h4 {
 }
 
 #titleText {
-    font-size: 10vw;
-    line-height: 0.75;
+    font-size: 8vw;
+    line-height: 1.5;
     text-align: center;
+    padding-right:20%;
 }
 
 #subtitleText {
-    font-size: 4vw;
+    font-size: 2vw;
     line-height: 0.1;
     text-align: center;
+    padding-right:20%;
 }
 
 b {
