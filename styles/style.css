@@ -327,10 +327,12 @@ button:hover {
 }
 
   #seeMore {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5%;
-    margin: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right:10%;
+    justify-items: center;
   }
 
   .sectionBorder {
