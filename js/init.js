@@ -189,6 +189,35 @@ if (arrow != null) {
   })
 }
 
+// gradientHero = getElementById("homeHero");
+document.addEventListener("mousemove", function(event) {moveGradient(event);});
+
+function moveGradient(event) {
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+  
+  mouseXpercentage = Math.round(event.clientX / windowWidth * 100);
+  mouseYpercentage = Math.round(event.clientY / windowHeight * 100);
+  
+  console.log("1");
+  document.getElementsByClassName("radial-gradient")[0].style.background = "radial-gradient(at " + mouseXpercentage + "% " + mouseYpercentage + "%, " + "rgb(100, 127, 214)" + ", " + "rgb(114, 73, 147)" + ")";
+  // `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, rgb(100, 127, 214), #724993)`;
+  console.log("2");
+};
+
+// onmousemove = function(e) {
+//   let mouseX = e.clientX;
+//   let mouseY = e.clientY;
+//     console.log("mouse location:", mouseX, mouseY)
+  
+//   let circleX = mouseX/document.body.clientWidth*100;
+//   let circleY = mouseY/document.body.clientHeight*100;
+
+//   gradientHero.style.background = `radial-gradient(at ${circleX}% ${circleY}%, rgb(100, 127, 214), #724993)`;
+
+//     // document.body.style.backgroundImage = "-webkit-radial-gradient(circle, #fff, #000)";
+// }
+
 //gallery image hover expand effect
 // let darkBoxVisible = false;
 

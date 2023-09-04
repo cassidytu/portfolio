@@ -9,6 +9,7 @@ body{
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 /* text*/
@@ -51,8 +52,8 @@ h4 {
 #subtitleText {
     font-size: 2vw;
     line-height: 0.1;
-    text-align: center;
-    padding-right:20%;
+    text-align: left;
+    /* padding-right:20%; */
 }
 
 b {
@@ -352,9 +353,8 @@ button:hover {
   }
 
 #homeHero {
-    height:80vh;  
-    margin-left:-10%; 
-    margin-right:-10%; 
+    height:100vh; 
+    width: 100vw; 
     color:#333;
     margin-top: -5%;
 }
@@ -366,9 +366,9 @@ button:hover {
     text-align: center; 
     margin-top: -4%;
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr;
     gap: 0;
-    margin-left: 35%;
+    /* margin-left: 35%; */
 }
 
 /* images or icons */
@@ -528,3 +528,19 @@ button:hover {
      column-count:         1;
     }
  }
+
+ .radial-gradient {
+    position: fixed;
+    top:0px;
+    left: 0;
+    height:100%;
+    width: 100%;
+    
+    /*Fallback if gradeints don't work */
+    background: rgb(114, 73, 147);
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, rgb(100, 127, 214), #724993
+      );
+  }
