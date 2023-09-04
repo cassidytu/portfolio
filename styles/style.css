@@ -64,6 +64,8 @@ b {
 header{
     grid-area: header;
     font-family: Unbounded, serif;
+    margin:0;
+    padding:0;
 }
 
 /* nav bar*/
@@ -354,12 +356,12 @@ button:hover {
   }
 
 #homeHero {
-    height:85vh; 
+    height:101vh; 
     width: 100vw; 
     color:#333;
-    margin-top: -5%;
     margin-left: -13%;
     position: relative;
+    margin-top: -11%;
 }
 
 #heroDescript {
@@ -545,9 +547,9 @@ button:hover {
     background: #D7C1E2;
     /*Linear gradient... */
     background: 
-      radial-gradient(
-       at center, rgb(100, 127, 214), #D7C1E2
-      );
+    linear-gradient(to top, #F7F6F3 0.1, #F7F6F3 0.3),
+    radial-gradient(at center, rgb(100, 127, 214), #D7C1E2);
+      
 }
 
 
