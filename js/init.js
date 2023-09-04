@@ -200,7 +200,7 @@ function moveGradient(event) {
   mouseYpercentage = Math.round(event.clientY / windowHeight * 100);
   
   console.log("1");
-  document.getElementsByClassName("radial-gradient")[0].style.background = "radial-gradient(at " + mouseXpercentage + "% " + mouseYpercentage + "%, " + "rgb(100, 127, 214)" + ", " + "rgb(114, 73, 147)" + ")";
+  document.getElementsByClassName("radial-gradient")[0].style.background = "radial-gradient(at " + mouseXpercentage + "% " + mouseYpercentage + "%, " + "rgb(100, 127, 214)" + ", " + "#D7C1E2" + ")";
   // `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, rgb(100, 127, 214), #724993)`;
   console.log("2");
 };
