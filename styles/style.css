@@ -252,6 +252,7 @@ button:hover {
 .proj {
     grid-template-columns: 1.5fr 0fr 1fr;
     display: grid;
+    margin-top: 5rem;
 }
 
 .projName {
