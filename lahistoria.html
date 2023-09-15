@@ -7,237 +7,258 @@
         <link rel="stylesheet" href="styles/style.css">
 
         <!--- fonts --->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&family=Figtree:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Poppins&display=swap" rel="stylesheet">
+        
     </head>
 
     <body>
         <header>
-            <nav class="navMenu">
-                <a href="index.html" style="float: left"><img src="assets/icons/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
-                <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="about.html">About</a>
-                <a href="other.html">Playground</a>
-                <a href="index.html#works" class="homeButton">Works</a>
+            <nav class="navMenu" style="padding-top:0.01rem;">
+                <!-- <a href="index.html" style="float: left"><img src="assets/icons/logo.png" style="height:9vh; width:auto; margin-top:-5vh"></a> -->
+                <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer" style="color:#F7F6F3;">Resume</a>
+                <a href="about.html" style="color:#F7F6F3;">About</a>
+                <a href="other.html" style="color:#F7F6F3;">Playground</a>
+                <a href="index.html#works" class="homeButton" style="color:#F7F6F3;">Works</a>
             </nav>
         </header>
+        <div style="height:90vh; background-image: url('assets/lahistoria/elmonte.png'); margin-top:-8rem;" class="parallax">
+            <div style="margin-left:15rem; padding-top:18rem;">
+                <div style="margin-top:10rem">
+                    <h1 style="margin-bottom:-0.5em; color:#F7F6F3;">La Historia</h1>
+                    <h4 style="color:#F7F6F3;">Fostering community engagement in local history.</h4>
+                </div>
+            </div>
+         </div>
         <div class="main">
-            <div id="hero" style="background-color:#FFFBD6;">
-                <img src="assets/ecohero/ecohero blank.png" width="600vw" class="slide-in" style="z-index: 5; padding-top:8vh; padding-left:2%">
-                <div style="margin-left:-8vw; margin-right:10vw;padding-top:12vh;" class="fade-in">
-                    <h1 style="font-size:8vh">EcoHero</h1>
-                    <h3>Empowering your green journey one habit at a time.</h3>
-                    <div class="caseStudyInfo">
-                        <div>
-                            <h4>Role</h4>
-                            <p>UX Researcher <br> Product Designer</p>
+            
+            <div class="centered">
+                <table>
+                    <tr>
+                        <th>Role</th>
+                        <th>Team</th>
+                        <th>Tools</th>
+                        <th>Timeline</th>
+                    </tr>
+                    <tr>
+                        <td>UX Researcher</td>
+                        <td>James Y.</td>
+                        <td>Google Sites</td>
+                        <td>Phase 1: Oct '22 - May '23</td>
+                    </tr>
+                    <tr>
+                        <td>Data Analyst</td>
+                        <td>Lindsay H.</td>
+                        <td>FigJam</td>
+                        <td>Phase 2: Jun '23 - Sep '23</td>
+                    </tr>
+                    <tr>
+                        <td>UX Writer</td>
+                        <td>Victoria L.</td>
+                        <td>UsabilityHub</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sookie C.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="centered">
+                <p><b>Preserving the barrios</b>, or neighborhood, is the mantra of La Historia Historical Society, a nonprofit organization that is the heart of El Monte’s Mexican American history and culture. It's a place where every artifact holds the key to unraveling tales and legacies of its community.</p>
+                <h4>How can we share this rich history to a wider audience?
+                </h4>
+                <p>Well, La Historia Historical Society Museum (LHHSM) has its own website that we can leverage to draw more people in.</p>
+            </div>
+            <h2 class="centered">A Fixer-Upper</h2>
+            <div style="width: 95%;
+                text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/lahistoria/oldsite.png" style="height:32rem; width:auto">
+                    <figcaption>What La Historia's website used to look like</figcaption>
+                </figure> 
+            </div>
+            <div class="centered">
+                <p>
+                    Starting in September 2022, UCLA Humans in User Experience (HUE) worked with La Historia to revamp their website, paying special attention to:
+                </p>
+                <ul>
+                    <li>
+                        La Historia’s mission of <u>centering and amplifying silenced narratives</u>
+                    </li>
+                    <li>
+                        La Historia’s <u>varied audience</u>, which includes high school students, people unaware of local history, and older people with less technological experience
+                    </li>
+                    <li>
+                        La Historia’s <u>financial and staffing situation</u>, especially after the peak of the COVID-19 pandemic
+                    </li>
+                </ul>
+                <p>Our research question started coming together...</p>
+                <h4>La Historia Museum aims to <mark>connect with its community</mark> by engaging with visitors, donors, and staff. How can we enhance this engagement through an online experience that is <mark>usable, accessible, and representative of the organization</mark>?</h4>
+                <p>
+                    A round of research including: heuristic evaluation, pilot usability tests (UT), field research, and more were conducted, ultimately leading to the initial prototype.    
+                </p>
+                <p>
+                    Here’s where Lindsay (my partner in crime) and I joined the story.
+                </p>
+            </div>
+            <div class="centered">
+                <h3>Our Objectives</h3>
+                <p>
+                    We were recruited by HUE to initiate the second round of user research with the current prototype.
+                </p>
+                <ul>
+                    <li>
+                        Identify and <u>investigate the sources</u> of user pain points with the current prototype
+                    </li>
+                    <li>
+                        <u>Qualify user behavior</u> and flow with the prototype                       
+                    </li>
+                    <li>
+                        Receive and <u>integrate </u> from La Historia Historical Society on the prototype
+                    </li>
+                    <li>
+                        <u>Determine solutions</u> for each pain point <u>based on user observations</u> and feedback, and update the prototype accordingly
+                    </li>
+                </ul>
+            </div>
+            <div class="centered">
+                <h2>User Research Part II: Return of the UTs</h2>
+                <p>We conducted 10 moderated (a mix of in-person and virtual) usability test sessions to assess the website’s updated design, information architecture, and user flow from the perspective of La Historia organization and community members.</p>
+            </div>
+            <div style="width: 80%; text-align: center; margin: auto;">
+                <figure>
+                    <div class="columnLayout">
+                        <div><img src="assets/lahistoria/ut01.png" style="height:22rem; width:auto"></div>
+                        <div><img src="assets/lahistoria/ut02.png" style="height:22rem; width:auto"></div>
+                    </div>
+                </figure>
+                <figcaption>Left: Virtual session over Zoom; Right: In person session at La Historia Museum</figcaption>
+            </div>
+            <div class="centered">
+                <p>With hours and hours of recordings to scour through, we meticulously documented verbal and nonverbal behaviors, timestamps, and task completion of each participant. This is what we discovered:</p>
+
+                <h4>01. People want <mark>clarity</mark> with terminology and a <mark>warm, inspiring tone</mark> in copies</h4>
+                <img src="assets/lahistoria/takeaway01.png" style="height:25rem; width:auto">
+                <h4>02. There’s a lot of <mark>confusion</mark> during the process to contribute personal artifacts to the museum</h4>
+                <img src="assets/lahistoria/takeaway02.png" style="height:25rem; width:auto">
+                <h4>03. Time is money and the website <mark>lacked efficiency</mark></h4>
+                <img src="assets/lahistoria/takeaway03.png" style="height:25rem; width:auto">
+                <h4>04. It’s hard to <mark>find call to action</mark> elements and figure out the <mark>next step</mark> in user navigation</h4>
+                <img src="assets/lahistoria/takeaway04.png" style="height:25rem; width:auto">left
+            </div>
+            <div class="centered">
+                <h3>Some Number Crunching…</h3>
+                <p>To back up our qualitative data, we did some quantitative analysis and the summary is below.</p>
+                <div style="text-align: left;margin: auto;">
+                    <div>
+                        <figure>
+                            <img src="assets/lahistoria/table.png" style="height: 22rem; width:auto">
+                        </figure>
+                        <figcaption style="text-align: left;">*Time on Task = Average time spent on task in seconds <br>**Satisfaction = Mean combined rating across three post-task measures: perceived ease of use, efficiency, and likelihood of completing the task outside a testing environment. 3 for highly satisfactory, 0 for unsatisfactory, and -3 for highly dissatisfactory.</figcaption>
+                    </div>
+                </div>
+                <br>
+                <p>Task 3 required participants to undergo a process of donating and describing a photo to LHHSM through a Google Form. Task 3 took the longest time to complete (mean = 466 seconds) and had the lowest satisfaction rating. While most participants agreed (i.e., agree or strongly agree) the website was easy to use (70%), <mark>only 40% of participants agreed they would use the website frequently</mark>.</p>
+                <h4>It seems like we have a few issues to address with this prototype…</h4>
+            </div>
+            <div class="centered">
+                <h3>Check-in Time!</h3>
+                <p>We were invited by the LHHSM stakeholders to visit the museum and this was the perfect chance to update them with our progress. We presented our findings and gained insight about what they needed.</p>
+                <h4>“Even if we have a beautiful website, it won’t do us any good if it's <mark>not manageable</mark> and the functionality of forms and such <mark>aren’t efficient</mark>.”</h4>
+                <p>We brought this concern back to the team and project lead, as well as addressing the pain points we discovered in the data. After bouncing ideas and solutions off of each other, we left with action items to tackle.</p>
+            </div>
+            <div>
+                <div class="centered">
+                    <h2>So, What Changed?</h2>
+                    <p>We were able to consolidate all of the pain points under two categories: terminology & instruction and navigation.</p>
+                    <h3>01. Terminology & Instruction</h3>
+                    <p>Across all tasks, slight language and presentation changes could significantly improve site <mark>clarity and functionality</mark>.</p>
+                    <h4>1A: (Task 3) Instructions need to be clear.</h4>
+                    <p>We suggested clarifying the donation process, stating that all users should complete the form and expect to receive further contact from the museum on how they will send their materials. We suggested including all of these instructions in the Google Form, and condensed the form so it’s only 2 sections (compared to the previous 12 pages!).</p>
+                </div>
+                <div style="width: 75%;
+                text-align: center; margin: auto;">
+                    <div>
+                        <img src="assets/lahistoria/1a.png">
+                    </div>
+                </div>
+                <div class="centered">
+                <h4>1B: (Task 3) Exhibitions Page should encourage users to get involved.</h4>
+                <p>Our proposed solution added a leading statement to emphasize the uniqueness of each exhibit. This ranged from subheadings to grab the attention of users, questions to prompt a potential action (e.g., donating a photo, getting in touch with LHHS, or visiting the exhibit in person), etc.</p>
+                </div>
+                <div style="width: 75%;
+                text-align: center; margin: auto;">
+                    <img src="assets/lahistoria/1b.png">
+                </div>
+                <div class="centered">
+                <h3>02. Navigation</h3>
+                <p>Usability could be improved by strategically placed call-to-action elements, presenting users with another pathway of a <mark>more localized navigation experience</mark>, instead of only relying on the navigation bar.</p>
+                <p>This encourages a seamless exploration of related content, ultimately creating a natural journey throughout the website. The design not only creates more exposure to other pages but also provides users with clear, relevant next steps to follow.</p>
+                </div>
+                <div style="width: 95%;
+                text-align: center; margin: auto;">
+                    <figure>
+                        <div class="columnLayout">
+                            <div class="column1" style="margin: auto">
+                                    <img src="assets/lahistoria/navflowbefore.png" style="height:32rem; width:auto">
+                            </div>
+                            <div class="column1"><img src="assets/lahistoria/navflowafter.png" style="height:32rem; width:auto"></div>
                         </div>
-                        <div>
-                            <h4>Timeline</h4>
-                            <p>10 weeks</p>
-                        </div>
-                        <div>
-                            <h4>Tools</h4>
-                            <p>Google Forms <br> UsabilityHub</p>
-                        </div>
+                    </figure>
+                    <figcaption>User flows of possible journeys using only call-to-action elements starting from Home page (left: before, right: after)</figcaption>
+                </div>
+                <div class="centered">
+                <h4>2A: Support Page</h4>
+                <p>We added a section to showcase results of donating or supporting to help users visualize their impact and encourage/incentivize them to contribute. The “See Your Contributions in Action!” button leads to the Exhibitions page that contains all the collections to which the donations are attributed to (and more artifacts!). This section can also include more behind the scenes images of digitizing photographs, setting up collections within the museum, etc.</p>
+                </div>
+                <div style="width: 75%;
+                text-align: center; margin: auto;">
+                    <div>
+                        <img src="assets/lahistoria/2a.png">
+                    </div>
+                </div>
+
+                <div class="centered">
+                <h4>2B: About Page</h4>
+                <p>We proposed adding a “Support Us” section to the bottom of the About page to provide users with a next step to follow when they finish learning about LHHSM. This leads to more exposure to the ways to contribute to the museum, as well as expanding on the feeling of trustworthiness of the organization and inciting excitement to help.</p>
+                </div>
+                <div style="width: 75%;
+                text-align: center; margin: auto;">
+                    <div>
+                        <img src="assets/lahistoria/2b.png">
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <div>
-                    <div class="sectionBorder" style="margin-top: -10%;">
-                        <h1>Problem</h1>
-                        <p>Climate change is a threat to our whole civilization, with effects that are already prominent and will continue to grow to catastrophic heights unless action is taken now. As one of the biggest challenges to tackle in today’s society, world leaders have come together and agreed on a plan to make the world a greener, fairer, and better place by 2030. But as members of society that necessarily involved, how would we also take steps to help this plan?</p>
-
-                       <h4><mark>How can we make the knowledge needed to combat climate change more accessible and engaging for the general public?</mark></h4>
-                    </div>
+            <div class="centered">
+                <h2>Passing the Torch</h2>
+                <div style="text-align: center;">
+                    <img src="assets/lahistoria/email.png" style="height: 14rem; width: auto">
                 </div>
-                <div class="sectionBorder">
-                    <div class="to-slide-up">
-                        <h1>Solution</h1>
-                        <p>EcoHero was created as a way to help <b> motivate the average person</b> to integrate more eco-conscious actions in their daily lives. Through <b> encouragement</b> and the <b>visualization of impact</b> on climate change and providing easy ways to get involved, EcoHero seeks to make climate change less daunting to combat!</p>
-                    </div>
-                    <div class="columnLayoutLeft">
-                        <div class="columnText">
-                            <div>
-                                <h4>Recommending Actions</h4>
-                                <p>Suggests possible courses of actions pertaining to a certain goal of fighting climate change <br><br>
-                                <mark>Makes <b>involvement easier</b> for users and <b>streamlines</b> the process of finding resources</mark>
-                                </p>
-                            </div>
-                        </div>
-                        <video width="80%" autoplay>
-                            <source src="assets/ecohero/actions.mov">
-                        </video>
-                    </div>
-                    <div class="columnLayoutRight">
-                        <video width="80%" autoplay>
-                            <source src="assets/ecohero/track.mov">
-                        </video>
-                        <div class="columnText">
-                            <div>
-                                <h4>Tracking Impact</h4>
-                                <p>Tracks logged climate action efforts of user and visualizes their impact <br><br>
-                                <mark><b>Encourages</b> users and <b>minimize</b> their feelings of helplessness</p></mark>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sectionBorder gridLayout">
-                    <h1 class="to-slide-up">Research</h1>
-                    <p style="margin-left:-30%; padding-top:4vh">I made my notes according to Jakob Nielson's 10 Usability Heuristics and Nielsen Norman Group's Severity Ratings for Usability Problems.</p>
+                <p>The latest prototype has been shipped to LHHSM! We also sent over several documents (thanks, Victoria!) summarizing how to update the site with videos/pictures and other functionalities. This should help ease the worries that LHHSM had and be a resource to train future website staff/volunteers.</p>
+                <p>In the meantime, the HUE team is still here to assist in making the transition as smooth as possible.</p>
+                <br><br>
+                <div class="columnLayout">
                     <div>
-                        <h4>Competitor Analysis</h4>
-                        <p>Focusing on two major government funded websites, whose main purpose is to serve the general public, I conducted a <b>heuristic evaluation to identify their issues</b> and how to fix these flaws to attract more of this demographic.</p>
+                        <p>As I reflect on my experience with this project, it was so exciting to be able to speak with people so passionate about their community and culture. If you have the chance to attend, La Historia is having an event, The Fabric of a Community, exhibiting generations of Mexican American fashion in El Monte.</p>
+                        <br>
+                        <h4>Adiós and until next time,</h4>
+                        <img src="assets/lahistoria/signaturev.png" style="width:60%">
                     </div>
-                    <div>
-                        <h4>Competitor Usability Test</h4>
-                        <p>I conducted a test on the websites to gather <b>live feedback</b> and further <b>solidify my previous research</b>, as well as practice preparing and facilitating interview sessions.</p>
-                    </div>
-                    <div>
-                        <h4>Contextual Inquiry</h4>
-                        <p>Coming into this project, I was set on redesigning the CalEPA website. However, this contextual inquiry allowed me to <b>revisit the root problem</b> I'm trying to address, the <b>discoverability of climate action and incentivization of it</b>. My participant provided a different perspective as an individual who wasn't really interested exploring these basic resources of climate action.<br><br></p>
-                        <p class="to-slide-up">So I began to wonder, <mark><b>how can I encourage users and make climate action as easy and fun as possible?</b></mark></p>
-                    </div>
-                    <img src="assets/ecohero/ci-task.png" width="100%">
-                </div>
-                <div class="sectionBorder">
-                    <h1 class="to-slide-up">Key Takeaways</h1>
-                    <div class="gridLayout">
-                        <div class="to-slide-up">
-                            <h2>01</h2>
-                            <h4>Lack of Motivation</h4>
-                            <p>Users need <b>extrinsic and intrinsic motivations</b> to encourage their actions, as well as a way to <b>visualize the impact</b> their actions have to <b>lessen the feeling of helplessness</b>. <br><br>
-                            "I don't really pay attention [to climate action] because I <b>don't see the results</b>" <br><br>
-                            "I'm <b>just one individual</b>, I don't necessarily believe I could make a dent"</p>
-                        </div>
-                        <div class="to-slide-up" style="animation-delay: 0.5s;">
-                            <h2>02</h2>
-                            <h4>Efficiency and Engagement</h4>
-                            <p>Previous websites were difficult for users to search for specific information with only a single journey path to reach it. Users also found these platforms to be "busy" and <b>too text heavy to be interesting</b>. <br><br>
-                            "That task took a bit <b>longer</b> than I had expected it to" <br><br>
-                            "It was <b>boring</b> and I didn't even look at all of it"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sectionBorder">
-                    <h2>Storytelling</h2>
-                    <p>With UX storytelling through multiple components (such as personas, empathy maps, scenarios, and journey maps), I was able to put myself into the <b>perspective of the users</b> by considering all these facets of these personas that are representative of the targeted audience. I humanized the user and their <b>story, pain points, and behavior</b>, ultimately leading to a better <b>focus on their needs/goals</b> and serve as the foundation for the features of my product that would solve these issues.</p>
-                    <img class="to-slide-up" src="assets/ecohero/persona 1.png" width="100%">
-                </div>
-                <div class="sectionBorder">
-                    <h2>Ideation</h2>
-                    <div class="columnLayoutSmallLeft">
-                        <div class="columnText">
-                            <div>
-                                <h4>Low Fidelity + <br>Cognitive Walkthrough</h4>
-                                <p>The prototyping allowed me to test the <b>flow and functionality</b> of the features that I had conceptualized. I had a few users conduct a cognitive walkthrough the sketches, documented with the colored arrows, to ensure I wasn't missing any pain points.</p>
-                            </div>
-                        </div>
-                        <img class="to-slide-up" src="assets/ecohero/lofi wireframe.png" width="100%">
-                    </div>
-                    <div class="columnLayoutSmallRight">
-                        <img class="to-slide-up" src="assets/ecohero/design system.png" width="100%">
-                        <div class="columnText">
-                            <div>
-                                <h4>Design System</h4>
-                                <p>This interface design brought the previous paper, low-fi prototype to life! I tested different typography, shape, and color variations and ran color contrast tests to ensure everything was visually accessible. <b>Impression and preference tests</b> were also conducted to help with looking at the overall image of the design.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Cognitive Walkthroughs</h4>
-                    <p>I conducted more walkthroughs with my prototypes and using all of the feedback I had gotten, I proceeded to make even more changes during this round of iterations.</p>
-                    <div class="triColumn">
-                        <div align="left">
-                            <img src="assets/ecohero/back before.png" width="55%">
-                        </div>
-                        <div style="margin-left:-40%; margin-right:30%">
-                            <p>
-                                User #02: "not able to click back to calendar" <br><br>
-                                User #03: "can't go back to change the date when signing up for the clean up" <br><br>
-                                I made a few different versions to see what would be the <b>most discoverable</b>. The best solution was to place the back action at the bottom near the sign up button, which was decided through a preference test as most users liked this version because it was <b>more clear</b>. <br><br>
-                            </p>
-                            <p class="to-slide-up">
-                                <b>Users prioritize <mark>flexibility and discoverability.</b></mark>
-                            </p>
-                        </div>
-                        <div class="gridLayout" style="gap:0%; margin-left:-20%">
-                            <img src="assets/ecohero/back after 02.png" style="display:inline-block; width:100%;">
-                            <img src="assets/ecohero/back after 01.png" style="display:inline-block; width:98%;">
-                        </div>
-                    </div>
-                    <div class="triColumn">
-                        <div align="center">
-                            <img src="assets/ecohero/circle before.png" width="60%">
-                        </div>
-                        <div>
-                            <p>
-                                User #04: "pie chart being gradient makes it challenging to see how much each category takes" <br><br>
-                                User #02: "the emissions graph on the profile page is a little hard to interpret" <br><br>
-                                This is an instance of where the designer (me) has prioritized aesthetics over <b>functionality</b>. I realized that having solid, clear is <b>easier to read</b>. Other changes to include is a hover feature that will show a breakdown of each section as colors may still be vague and hard to precisely interpret. <br><br>
-                            </p>
-                            <p class="to-slide-up">
-                                <b>Users prioritize <mark>clarity.</b></mark>
-                            </p>
-                        </div>
-                        <div align="center">
-                            <img src="assets/ecohero/circle after.png" width="60%">
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Usability Testing</h4>
-                        <p>With a more polished high-fidelity prototype, I felt ready to move onto usability testing with a product that has a <b>clear purpose and understand flows between interactions and features</b>. I conducted usability test (UT) to gather live feedback from users by observing them while they interact with the product.</p>
-                        <div class="triColumn">
-                            <div align="left">
-                                <img src="assets/ecohero/impact before.png" width="64%">
-                            </div>
-                            <div style="margin-left:-32%; margin-right:35%">
-                                <p>
-                                    User #01: Hovered over impact rating expecting something <br><br>
-                                    Placing the impact info pop-up near the impact rating was <b>more intuitive for users</b>. They prefer it as gives more insight into their question of how the impact is calculated. They also mentioned how it is nice to be able to see the information prior to completion of the action. <br><br>
-                                </p>
-                                <p class="to-slide-up">
-                                    <b>Users prioritize <mark>satisfying their curiosity instantly.</b></mark>
-                                </p>
-                            </div>
-                            <div class="gridLayout" style="gap:0%; margin-left:-20%">
-                                <img src="assets/ecohero/impact after 01.png" style="display:inline-block; width:100%;">
-                                <img src="assets/ecohero/impact after 02.png" style="display:inline-block; width:96%;">
-                            </div>
-                        </div>
-                        <p>*These were just a few of the changes I made with the additional testing. As I continue with more iterations, I'm sure there will be more things I can improve upon!</p>
-                    </div>
-                </div>
-                <div class="sectionBorder gridLayout">
-                    <h1>Reflections</h1>
-                    <p style="margin-left:-30%; padding-top:4vh">This was a project created in the course Digital Humanities 110: User Experience and Design at UCLA. As this was one of my first in-depth UX projects, I learned a lot of new things!</p>
-                    <div class="to-slide-up">
-                        <h2>01</h2>
-                        <h4>Research is Key</h4>
-                        <p>I didn't realize there was so many different ways to gather data and how <b>each method serves a specific purpose</b>. Learning how a heuristic evaluation provides important, yet different, data compared to a contextual inquiry allowed me to have <b>insight in a multitude of aspects</b> ranging from user behavior to more technical rules of thumb.</p>
-                    </div>
-                    <div class="to-slide-up" style="animation-delay: 0.5s;">
-                        <h2>02</h2>
-                        <h4>Design Preparations</h4>
-                        <p>This was my first time creating a design system myself. A <b>cohesive foundation</b> of what spacing, font size, etc. is the <b>backbone of having internal consistency</b> to project design. While time consuming to set up at first, implementing all the details into my design file, it was very helpful during the hi-fi prototyping process and sharing my files with others.</p>
+                    <div style="margin-left:2rem; text-align:right">
+                        <a href="https://www.lahistoriamuseum.org/events">
+                            <img src="assets/lahistoria/fabric poster.png" style="height:30rem; width:auto">
+                        </a>
                     </div>
                 </div>
             </div>
             <div id="footer">
-                <h2>Next Project!</h2>
+                <h3>Next Project!</h3>
                 <div id="seeMore">
-                    <!-- <div class="moreProj">
-                        <a href="other.html"><img class="projImg" src="assets/other/jazz.png"></a>
-                        <div>
-                            <p>Look at my projects <span style="font-family:Unbounded;">outside of UX</span>!</p>
-                            <button onclick="location.href = 'other.html';">See More</button>
-                        </div>
-                    </div> -->
                     <div class="moreProj">
                         <a href="exotic.html"><img class="projImg" src="assets/exotic/exotic.png"></a>
                         <div>
-                            <p>Finding an <span style="font-family:Unbounded;">effortless approach</span> to astronomy for beginners.</p>
+                            <p>Finding an <span style="font-family:Fraunces; font-weight: 600;">effortless approach</span> to astronomy for beginners.</p>
                             <button onclick="location.href = 'exotic.html';">See More →</button>
                         </div>
                     </div>

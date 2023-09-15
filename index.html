@@ -10,65 +10,38 @@
         <!--- fonts --->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&family=Figtree:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Poppins&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="main">
-            <div id="homeHero">
-                <div class="radial-gradient">
-                    <div style="padding-top:5vh;">
-                        <h1 class="fade-in" style="animation-duration:2s" id="titleText">I'm <span style="color:#F7F6F3"><i>Cassidy</i></span>,</h1>
-                        <div style="float:right">
-                            <div id="heroDescript" class="fade-in">
-                                <div style="text-align: left;">
-                                    <h2 id="subtitleText">A UX/UI Designer</h2>
-                                    <p style="font-size: 1.25vw;">who is a multi-media creative, digital humanist, and film addict obsessed with <i>sharing and listening to stories</i>!</p>
-                                </div>
-                                <!-- <img src="assets/icons/happy.png" class="rotate" id="happyFace" style="margin-bottom: 3%;"> -->
-                            </div>
-                        </div>
+        <div class="container" style="height:90vh;">
+            <div class="box, parallax, radial-gradient" style="height:90vh; background-image: url(); margin-top:-8rem;"></div>
+            <div class="box overlay">
+                <div>
+                    <nav class="navMenu">
+                        <!-- <a href="index.html" style="float: left"><img src="assets/icons/logo.png" style="height:9vh; width:auto; margin-top:-5vh"></a> -->
+                        <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer" style="color:#F7F6F3;">Resume</a>
+                        <a href="about.html" style="color:#F7F6F3;">About</a>
+                        <a href="other.html" style="color:#F7F6F3;">Playground</a>
+                        <a href="index.html#works" class="homeButton" style="color:#F7F6F3;">Works</a>
+                    </nav>
+                </div>
+                <div style="margin-top:-8rem;" class="parallax">
+            <div style="margin-left:15rem; padding-top:18rem;">
+                <div style="margin-top:10rem">
+                    <h1 style="margin-bottom:-0.5em; color:#F7F6F3;">I'm Cassidy</h1>
+                    <div style="text-align: left;">
+                        <h4 style="color:#F7F6F3; margin-bottom:-0.5em; font-size: 32px;">A UX/UI Designer</h4>
+                        <h4 style="color:#F7F6F3;">who is a multi-media creative, digital humanist, and film addict obsessed with sharing and listening to stories!</h4>
                     </div>
                 </div>
-                    <div>
-                        <!-- <h2 id="subtitleText">
-                            <span
-                                class="txt-rotate"
-                                data-period="2000"
-                                data-rotate='[ "Hello!", "Xin Chào!", "你好"]'>
-                            </span>
-                        </h2> -->
-                    </div>
-                
-                <!-- <img src="assets/icons/light blue.png" style="position:absolute; z-index:-1; width:40%; margin-top:-8%; margin-left:4%"> -->
-                
-                <!-- <img src="assets/icons/arrow hover.png" id="arrowStars" style="display: none;">
-                <img src="assets/icons/arrow.png" id="arrowIcon"> -->
             </div>
-            <header style="padding-top:5vh; margin-left:-10vw;">
-            <nav class="navMenu" style="width:100vw">
-                <a href="#" style="float: left"><img src="assets/icons/logo.png" style="height:12vh; margin-top:-40%;"></a>
-                <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="about.html">About</a>
-                <a href="other.html">Playground</a>
-                <a href="#works" style="color:#724993;">Works</a>
-            <!-- </div><div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Playground
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="ecohero.html">EcoHero</a>
-                    <a href="exotic.html">Exotic</a>
-                    <a href="planit.html">Planit</a>
-                    <a href="other.html">Other</a>
-                </div> 
-            </div> -->
-            </nav>
-        </header>
-            <div id="projContainer" style="padding-top:10vh;">
+         </div>
+            </div>
+          </div>
+        
+        <div class="main">
+            <div id="projContainer" class="centered">
                 <!-- <font color="#724993"><i>Selected</i></font>  -->
                 <h1 id="works">Works</h1>
                 <div class="proj to-slide-up">
@@ -76,7 +49,7 @@
                     <div class="projName">
                         <div>
                             <p>UX Research, Product Design</p>
-                            <h3><span style="font-family:Unbounded;">Inspiring</span> your green journey one habit at a time.</h3>
+                            <h3><span style="color:#724993;">Inspiring</span> your green journey one habit at a time.</h3>
                             <button onclick="location.href = 'ecohero.html';">Learn More</button>
                         </div>
                     </div>
@@ -86,7 +59,7 @@
                     <div class="projName">
                         <div>
                             <p>UX Research</p>
-                            <h3>Finding an <span style="font-family:Unbounded;">effortless approach</span> to astronomy for beginners.</h3>
+                            <h3>Finding an <span style="color:#724993;">effortless approach</span> to astronomy for beginners.</h3>
                             <button onclick="location.href = 'exotic.html';">Learn More</button>
                         </div>
                     </div>
@@ -96,13 +69,13 @@
                     <div class="projName">
                         <div>
                             <p>Brand Design, Product Design</p>
-                            <h3>Making your travel plans <span style="font-family:Unbounded;">easier</span>.</h3>
+                            <h3>Making your travel plans <span style="color:#724993;">easier</span>.</h3>
                             <button onclick="location.href = 'planit.html';">Learn More</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="to-slide-up" style="text-align: right;">
+            <div class="to-slide-up, centered" style="text-align: right;">
                 <h1>Say <span style="color:#724993;"><i>hello</i></span> back!</h1>
                 <p style="margin-top:-3%;">I would love to hear from you and we can trade stories, <br>discussing anything from design to food and music.</p>
                 <a href="mailto: cassidyytu@gmail.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/email.png" style="width:50px"></a>
