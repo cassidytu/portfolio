@@ -7,146 +7,221 @@
         <link rel="stylesheet" href="styles/style.css">
 
         <!--- fonts --->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&family=Figtree:wght@400;600&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Poppins&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <nav class="navMenu">
-                <a href="index.html" style="float: left"><img src="assets/icons/logo.png" style="height:12vh; margin-top:-3.5vh"></a>
-                <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="about.html">About</a>
-                <a href="other.html">Playground</a>
-                <a href="index.html#works">Works</a>
+            <nav class="navMenu" style="padding-top:0.01rem;">
+                <!-- <a href="index.html" style="float: left"><img src="assets/icons/logo.png" style="height:9vh; width:auto; margin-top:-5vh"></a> -->
+                <a href="assets/cassidytu_resume.pdf" target="_blank" rel="noopener noreferrer" style="color:#F7F6F3;">Resume</a>
+                <a href="about.html" style="color:#F7F6F3;">About</a>
+                <a href="other.html" style="color:#F7F6F3;">Playground</a>
+                <a href="index.html#works" class="homeButton" style="color:#F7F6F3;">Works</a>
             </nav>
         </header>
+        <div style="height:90vh; background-image: url('assets/exotic/exotic.jpeg'); margin-top:-8rem;" class="parallax">
+            <div style="margin-left:15rem; padding-top:18rem;">
+                <div style="margin-top:10rem">
+                    <h1 style="margin-bottom:-0.5em; color:#F7F6F3;">EXOTIC Software Tutorial</h1>
+                    <h4 style="color:#F7F6F3;">Finding an effortless approach to astronomy for beginners.</h4>
+                </div>
+            </div>
+         </div>
         <div class="main">
-            <div id="hero" style="background-color: #CACCFF;">
-                <img src="assets/exotic/exotic.png" width="700vw" class="slide-in" style="z-index: 5; padding-top:4vh; padding-left:2%">
-                <div style="margin-left:-5vw; margin-right:5vw; padding-top:10vh;" class="fade-in">
-                    <h1 style="font-size:4.5vh;">Exotic Software: Beginner Tutorial</h1>
-                    <h3>Finding an effortless approach to astronomy for beginners.</h3>
-                    <div class="caseStudyInfo">
-                        <div>
-                            <h4>Role</h4>
-                            <p>UX Researcher</p>
-                        </div>
-                        <div>
-                            <h4>Team</h4>
-                            <p>Anna W. <br>Caitlyn C.</p>
-                        </div>
-                        <div>
-                            <h4>Timeline</h4>
-                            <p>10 weeks</p>
-                        </div>
-                        <div>
-                            <h4>Tools</h4>
-                            <p>Miro<br>Google Forms<br>FigJam</p>
-                        </div>
+            <div class="centered">
+                <table>
+                    <tr>
+                        <th>Role</th>
+                        <th>Team</th>
+                        <th>Tools</th>
+                        <th>Timeline</th>
+                    </tr>
+                    <tr>
+                        <td>UX Researcher</td>
+                        <td>Anna W.</td>
+                        <td>Miro</td>
+                        <td>Oct '22 - Dec '22</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Caitlyn C.</td>
+                        <td>FigJam</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Google Sites</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="centered">
+                <div>
+                    <p><b>You don't have to be a rocket scientist</b> or an astrophysicist to participate in studying the distant world of exoplanets. When you look up into the night sky, do you ever wonder what's out there beyond our solar system? Exoplanet Watch is a NASA citizen science project that lets anyone learn and contribute to exoplanet observation data through their Exoplanet Transit Interpretation Code (EXOTIC) software.</p>
+                    <h4>However, doesn’t this all still seem too daunting and complicated for astronomy beginners?</h4>
+                    <p>This is where we come in.</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="centered">Houston, We Have a Problem</h2>
+                <div style="width: 95%;
+                    text-align: center; margin: auto;">
+                    <figure>
+                        <img src="assets/exotic/exotic demo.gif" style="height:32rem; width:auto">
+                        <figcaption>What the EXOTIC Software Tutorial looks like</figcaption>
+                    </figure> 
+                </div>
+            </div>    
+            <div class="centered">
+                <p>We were tasked to assess the usability of the EXOTIC Software tutorial and how appealing it was to targeted users. They ranged from high school to college students with less knowledge and experience with astronomy.</p>
+                <p>This tutorial serves as a bridge for these users to be introduced and learn about how to get involved with discovering exoplanets through the software. Therefore, exploring their reactions and feedback to the tutorial is vital to <mark>user engagement, retention, and participation</mark>, which is the overall goal of our client.
+                </p>
+                <h3>Our Hypothesis</h3>
+                <p>
+                    Novice users of EXOTIC would be less engaged than expert users, due to:
+                    <ul>
+                        <li><u>Difficulty understanding</u> the tutorial’s terminology and purpose</li>
+                        <li><u>Novelty of using the Jupyter Notebook</u> platform, which is where the tutorial is housed on</li>
+                        <li><u>Overwhelming presentation</u> of information, data, and text</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="centered">
+                <h2>Unveiling the Mysteries of the Universe (and Its Users)</h2>
+                <h3>Methods</h3>
+                <p>We conducted usability testing (UT) interviews with 7 college students; 6 of these participants had little to no experience with astronomy and one had an education in aerospace engineering. Of the 7 participants, 3 had never used Jupyter notebooks before the usability testing interview.</p>
+                <p>Each interview was conducted using a standard script of questions and tasks. The interviews were conducted on Zoom, where participants shared their screens with the facilitators. We recorded data using an internal-facing Google Form with all of our questions, and these interviews were also recorded for future analysis.</p>
+            </div>
+            <div class="centered">
+                <h3>Charting the Uncharted Territories: <br>Product Reaction Word Cloud</h3>
+                <p>We created a word cloud out of words our participants chose to describe their experience with the EXOTIC tutorial to find the most common reactions. On first glance, the word cloud depicts a mix of positive and negative reactions towards the tutorial, with words like "overwhelming" and "convenient" seemingly similar in size.</p>
+                <div style="text-align:left; margin:auto;">
+                    <div>
+                        <figure>
+                            <img src="assets/exotic/wordcloud.png" style="height: 22rem; width:auto">
+                        </figure>
+                        <figcaption style="text-align: left;"></figcaption>
+                    </div>
+                </div>
+                <p>However, when the top 5 most selected words are counted (depicted in the table below), we can see that <mark>3 out of the top 5 words</mark> that participants resonate with the most lean more towards a <mark>negative reaction</mark> to the EXOTIC tutorial.
+                </p>
+                <div style="text-align:center; margin:auto;">
+                    <div>
+                        <figure>
+                            <img src="assets/exotic/reactiontable.png" style="height: 22rem; width:auto">
+                        </figure>
+                        <figcaption style="text-align: left;"></figcaption>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <div>
-                    <div class="sectionBorder" style="margin-top: -10%;">
-                        <h1>Problem</h1>
-                        <p>The problem at hand was to <b>assess the usability</bn> of the EXOTIC Software tutorial and how appealing it was to the targeted audience of users with <b>less knowledge and experience</b> with astronomy, specifically in the age range of high school to college students. The tutorial serves as a bridge for these users to be introduced and learn about how to get involved with discovering exoplanets through the software. Therefore, exploring their reactions and feedback to the tutorial is vital to user <b>engagement, retention, and participation</b>, which is the overall goal of our client.</p>
-                        <h4>Hypothesis:</h4>
-                        <h4><mark>Novice users of EXOTIC would have difficulty understanding the tutorial’s terms and purpose, and would therefore be less engaged than expert users.</mark></h4>
+            <div class="centered">
+                <h3>Charting the Uncharted Territories II: <br>Affinity Mapping</h3>
+                <p>After looking at our quantitive data, we grouped qualitative data from our interviews into thematic ideas to find the most common user pain points and successes.</p>
+            </div>
+            <div style="width: 70%;
+                text-align: center; margin: auto;">
+                    <div>
+                        <img src="assets/exotic/affinity map.png">
                     </div>
                 </div>
-                <div class="sectionBorder">
-                    <div class="gridLayout to-slide-up">
-                        <h1>Solution</h1>
-                        <p style="margin-left:-50%">Due to the nature of the project and timeline, creating prototypes was outside our scope and we were not able to meet with developers to discuss/make any further changes. However, our client’s person of contact received our research and mentioned that it had supported previous concerns about the tutorial user experience. In the future, we hope to see these recommendations on the tutorial!</p>
-                    </div>
-                    <h4>Deliverables</h4>
-                    <p>Based on our research, we suggested phase-by-phase recommendations of the EXOTIC tutorial to our client that we would've implemented to improve the overall user experience. We presented a written report and presentation to our client's person of contact, documenting our entire process and recommendations, including the various graphs and charts that illustrated the research and analysis we had conducted. Part of the presentation has been included below as a preview into our suggestions.</p>
-                    <div align="center">
-                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQr7dhHWslSNvOBcwUTtVTXDDx1HM5OYyHKS04-gZMFnwr2zMjYKZU4-0922k4vC1BQuMw6p0mNnLJQ/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    </div>
-                    
+            <div class="centered">
+                <h4>01. Lack of information hierarchy</h4>
+                <p>
+                    Users who had never used a Jupyter notebook were immediately <mark>intimidated by all the information</mark>. Other users <mark>underestimated the amount of time</mark> the tutorial would take to run because of the length text.
+                </p>
+                <div class="centered">
+                    <h5 style="font-style: italic;">"It's so many words, I feel like I don't even know where to start reading.” (P6)</h5>
+                    <h5 style="font-style: italic;">“What the f*** is this?” (P5)</h5>
                 </div>
-                <div class="sectionBorder">
-                    <h1 class="to-slide-up">Research</h1>
-                    <h3>Methods</h3>
-                    <p>We conducted usability testing interviews with seven college students; six of these participants had little to no experience with astronomy and one had an education in aerospace engineering. Of the seven participants, three had never used Jupyter notebooks before the usability testing interview.</p>
-                    <p>Each interview was conducted using a standard script of questions and tasks. The interviews were conducted on Zoom, where participants shared their screens with the interview facilitators. We recorded data using an internal-facing Google Form with all of our questions, and these interviews were also recorded for future reference.</p>
-                    <h3>Analysis</h3>
-                    <div class="columnLayoutSmallLeft">
-                        <div class="columnText">
-                            <div>
-                                <h4>Affinity Mapping</h4>
-                                <p>We grouped qualitative from our interviews into common thematic ideas to <mark>find the most common user pain points and successes</mark>.</p>
-                            </div>
-                        </div>
-                        <img src="assets/exotic/affinity map.png" style="width:100%">
-                    </div>
-                    <div class="columnLayoutSmallRight">
-                        <img src="assets/exotic/word cloud.png" style="grid-column-start:1; grid-column-end:2;">
-                        <div class="columnText" style="grid-column-start: 3;">
-                            <div>
-                                <h4>Product Reaction Cards Word Cloud</h4>
-                                <p>We created a word cloud out of the words our participants chose to describe their experience with EXOTIC to find the most <mark>common reactions participants had</mark>  after the tutorial.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columnLayoutSmallLeft">
-                        <div class="columnText">
-                            <div>
-                                <h4>Experience Mapping</h4>
-                                <p>We illustrated our persona's, a novice college student astronomer, journey as they used the EXOTIC tutorial for the first time to fully <mark>understand and empathize with</mark> their pain points and <mark>find opportunities</mark> for improvement.</p>
-                            </div>
-                        </div>
-                        <img src="assets/exotic/experience map.png" style="width:100%;">
-                    </div>
+                
+                <h4>02. Plug and chug</h4>
+                <p>
+                    Users plugged in numbers and followed instructions, but <mark>were not confident</mark> in replicating this process with new data. Data input caused a lot of confusion and involved tedious back and forth scrolling.
+                </p>
+                <div class="centered">
+                    <h5 style="font-style: italic;">"I don’t know if I could do this by myself.” (P3)</h5>
                 </div>
-                <div class="sectionBorder">
-                    <h1 class="to-slide-up">Key Takeaways</h1>
-                    <div class="gridLayout">
-                        <div class="to-slide-up">
-                            <h2>01</h2>
-                            <h4>Lack of information hierarchy</h4>
-                            <p>Users who had never used Jupyter notebook were immediately intimidated by all the information. Other users overestimated the amount of time the tutorial would take to run because of the length text. <br><br>
-                            “What the f*** is this?” (P5) <br>
-                            “It's so many words, I feel like I don't even know where to start reading.” (P6)</p>
-                        </div>
-                        <div class="to-slide-up">
-                            <h2>02</h2>
-                            <h4>Unclear material</h4>
-                            <p>Users did not understand when/where to input values and could not interpret the end results presented. Terminology was confusing for everyone, regardless of experience. <br><br>
-                            “A lot of things are happening, there are a lot of numbers I don't know, it looks fancy.” (P2) <br>
-                            "I have no idea what I'm looking at." (P4)</p>
-                        </div>
-                        <div class="to-slide-up">
-                            <h2>03</h2>
-                            <h4>Plug and chug, not learning</h4>
-                            <p>Users plugged in numbers and followed instructions, but were not confident in replicating this process with new data. <br><br>
-                            “I don’t know if I could do this by myself.” (P3)</p>
-                        </div>
-                        <div class="to-slide-up">
-                            <h2>04</h2>
-                            <h4>Videos had mixed reactions</h4>
-                            <p>Some enjoyed it, some preferred shorter videos, and others did not view them at all. <br><br>
-                            “Whenever it comes to videos embedded, I never really watch them.” (P4)</p>
-                        </div>
-                    </div>
+                <h4>03. Unclear material</h4>
+                <p>
+                    Users did not understand when/where to input values and <mark>could not interpret the end results</mark> presented. This decreased satisfaction and limited the EXOTIC’s impact as a tool. <mark>Terminology was confusing</mark> for everyone, regardless of experience.
+                </p>
+                <div class="centered">
+                    <h5 style="font-style: italic;">“A lot of things are happening, there are a lot of numbers I don't know, it looks fancy.” (P2)</h5>
+                    <h5 style="font-style: italic;">"I have no idea what I'm looking at." (P4)</h5>
                 </div>
-                <div class="sectionBorder">
-                    <div class="gridLayout">
-                        <h1>Reflections</h1>
-                        <p style="margin-left:-30%; padding-top:4vh">This was a client project for NASA JPL’s Exoplanet Watch team, in association with my UX Design professor at UCLA, Professor Lynn Boyden.</p>
-                        <div class="to-slide-up">
-                            <h2>01</h2>
-                            <h4>Research as a Defense</h4>
-                            <p>We were able to provide our insights confidently in front of our client's team due to the supporting evidence that we found. It also felt nice to be validated as past research companies have found similar findings as us!</p>
-                        </div>
-                        <div class="to-slide-up">
-                            <h2>02</h2>
-                            <h4>Knowledge Limitations</h4>
-                            <p>We came into the project without any knowledge of the software/platform and astronomy in general, which ultimately affected and slowed the project. Moving forward, understanding more about Jupyter Notebook, EXOTIC, and lightcurves + exoplanets or talking to devs/experts would be very helpful to providing realistic recommendations.</p>
-                        </div>
+                <h4>04. Videos had mixed reactions</h4>
+                <p>
+                    Some enjoyed it, some preferred shorter videos, and others <mark>did not view them</mark> at all.
+                </p>
+                <div class="centered">
+                    <h5 style="font-style: italic;">“Whenever it comes to videos embedded, I never really watch them.” (P4)</h5>
+                    <h5 style="font-style: italic;">“I really liked the video because it was a break from all the reading.” (P5)</h5>
+                </div>
+            </div>
+            <div class="centered">
+                <h3>Charting the Uncharted Territories III: <br>Experience Mapping</h3>
+                <p>Using our affinity map, we illustrated our persona's, a novice college student astronomer, journey as they used the EXOTIC tutorial for the first time to fully understand when and where the pain points we found occurred and find opportunities for improvement at those stages.</p>
+            </div>
+            <div style="width: 70%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/experience map.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div class="centered">
+                <h2>From Gravity to Galaxies: <br>Fixing the Astronomer's Journey</h2>
+                <p>We recommended the following changes based on our research findings.</p>
+            </div>
+            <div style="width: 55%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/overview.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div style="width: 55%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/step1.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div style="width: 55%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/step2a.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div style="width: 55%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/step2b.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div style="width: 55%; text-align: center; margin: auto;">
+                <figure>
+                    <img src="assets/exotic/step3.png">
+                </figure>
+                <figcaption></figcaption>
+            </div>
+            <div class="centered">
+                <p>
+                </p>
+
+            </div>
+            <div class="centered">
+                <div class="columnLayout">
+                    <div>
+                        <p>We were able to provide our insights confidently in front of our client's team due to the supporting evidence that we found. It also felt nice to be validated as past research companies have found similar findings as us! We came into the project worried due to the lack knowledge of about the software/platform and astronomy, but it worked in our favor as we could closer identify and empathize with the targeted user.</p>
+                        <br>
+                        <p>It was such a unique experience and we couldn't have done it without the support of Professor Lynn Boyden from UCLA, Rachel Zimmerman Brachman from NASA JPL Exoplanet Watch, and Lujayn Megally, our Project Lead (who was highlighted as Jan '22 Member of the Month in the Exoplanet Watch Newsletter!).</p>
+                        <h4>To infinity and beyond,</h4>
+                        <img src="assets/lahistoria/signaturev.png" style="width:80%">
+                    </div>
+                    <div style="margin-left:2rem; text-align:right">
+                        <a href="https://www.icontact-archive.com/archive?c=1389932&f=12381&s=15041&m=313429&t=c21cc7d55a067996e3ae395dc5f514a63906320ec5cb2a04b22475c0673adef9" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/exotic/memberofmonth.png" style="height:40rem; width:auto">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -154,12 +229,19 @@
                 <h2>Next Project!</h2>
                 <div id="seeMore">
                     <div class="moreProj">
-                        <a href="planit.html"><img class="projImg" src="assets/planit/planit.png"></a>
+                        <a href="lahistoria.html"><img class="projImg" src="assets/lahistoria/lahistoria.png"></a>
                         <div>
-                            <p>Making your travel plans <span style="font-family:Unbounded;">easier</span>.</p>
-                            <button onclick="location.href = 'planit.html';">See More →</button>
+                            <p><span style="font-family:Fraunces; font-weight: 600;">Fostering</span> community <span style="font-family:Fraunces; font-weight: 600;">engagement</span> in local history.</p>
+                            <button onclick="location.href = 'lahistoria.html';">See More →</button>
                         </div>
                     </div>
+                    <!-- <div class="moreProj">
+                        <a href="ecohero.html"><img class="projImg" src="assets/ecohero/ecohero.png"></a>
+                        <div>
+                            <p><span style="font-family:Fraunces; font-weight: 600;">Inspiring</span> your green journey one habit at a time.</p>
+                            <button onclick="location.href = 'ecohero.html';">See More →</button>
+                        </div>
+                    </div> -->
                 </div>
                 <p>Designed + Coded with ♥️ in Los Angeles</p>
                 <button onclick="topFunction()" id="scrollButton" title="Go to top">&#8593; Back to Top</button>
