@@ -66,13 +66,6 @@ b {
     font-weight: 800;
 }
 
-header{
-    grid-area: header;
-    font-family: Unbounded, serif;
-    margin:0;
-    padding:0;
-}
-
 table{
     width:100%;
 }
@@ -127,79 +120,6 @@ td {
     /* background-image:url('assets/stars.png'); */
 }
 
-li {
-    list-style: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: right;
-    overflow: hidden;
-    display: inline;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    border: none;
-    font-size: 16px;
-    width: 160px;
-    outline: none;
-    color: #333;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    padding: 0;
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-
-.dropbtn:hover, .dropbtn:active, .dropbtn:focus {
-    color:#724993;
-}
-
-  /* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    margin-left: 1.5vw;
-    margin-bottom: 1vh;
-    background-color: #F7F6F3;
-    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-    width: 100px;
-    z-index: 1;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    padding-right:10px;
-    border-radius: 5px;
-  }
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: #333;
-    display: block;
-    text-align: left;
-    width: 100px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    padding-right:10px;
-  }
-
-.dropdown-content a:active {
-    background-image: url(assets/stars.png);
-}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-    
-  }
-
-  .show {
-    display: block;
-  }
-
 #footer{
     grid-area: footer;
     margin-bottom:2%;
@@ -207,26 +127,11 @@ li {
     text-align: center;
 }
 
-.main{
-    /* padding-top: 0%; */
-}
-
 .centered{
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 2%;
-}
-
-#hero {
-    border-radius: 10px;
-    margin-left: -8%;
-    margin-right: -8%;
-    height:75vh;
-    align-content: left;
-    grid-template-columns: 0.4fr 1fr;
-    display: grid;
-    gap: 5%;
 }
 
 button{
@@ -285,10 +190,6 @@ figcaption {
     color: #767575;
 }
 
-.banner {
-    background-color: #724993;
-}
-
 .columnLayout {
     grid-template-columns: 1fr 1fr;
     display: grid;
@@ -304,12 +205,6 @@ figcaption {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-}
-
-.caseStudyInfo {
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-    display: grid;
-    gap: 5%;
 }
 
 #aboutColumn {
@@ -413,14 +308,6 @@ figcaption {
     cursor: pointer;
 }
 
-#arrowStars {
-    position: absolute;
-    margin-left: 40%;
-    margin-right: auto;
-    margin-top: 8.5%;
-    width: 15%;
-}
-
 /* animations */
 @-webkit-keyframes rotate {
     0% {transform: rotate(-30deg)}
@@ -489,11 +376,6 @@ figcaption {
       background-size: 100% var(--height);
     }
   }
-
-  /* #darkbox { width:1280px; height:720px; position:absolute;
-    top:0; left:0; background-color:#333; overflow: hidden; text-align:center;
-}
-.darkboximg { padding:5%; max-width: 1216px; max-height: 684px; } */
 
   #gallery {
     line-height:0;
@@ -583,23 +465,3 @@ li {
     z-index: 9;
     width:100vw;
   }
-  
-
-/* work on fade edge of hero transparent
-
-ol {
-    border: 1px #F7F6F3 dashed;
-    position: relative;
-    padding: 0;
-    margin:0;
-  }
-  
-  ol:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    background-image: linear-gradient(to bottom, transparent, F7F6F3 90%);
-    width: 100%;
-    height: 100%;
-  } */

@@ -135,23 +135,6 @@ function onLinkClick() {
   document.getElementsById('works').scrollIntoView({behavior:'smooth'});
 };
 
-// //dropdown button in nav bar
-// /* When the user clicks on the button, 
-// toggle between hiding and showing the dropdown content */
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// // Close the dropdown if the user clicks outside of it
-// window.onclick = function(e) {
-//   if (!e.target.matches('.dropbtn')) {
-//   var myDropdown = document.getElementById("myDropdown");
-//     if (myDropdown.classList.contains('show')) {
-//       myDropdown.classList.remove('show');
-//     }
-//   }
-// }
-
 // hover effect for happy face
 var image = document.getElementById("happyFace");
 
@@ -198,69 +181,11 @@ function moveGradient(event) {
   
   mouseXpercentage = Math.round(event.clientX / windowWidth * 100);
   mouseYpercentage = Math.round(event.clientY / windowHeight * 100);
+
+  mouseX2 = mouseXpercentage + 5;
+  mouseY2 = mouseYpercentage + 5; 
   
-  console.log("1");
   document.getElementsByClassName("radial-gradient")[0].style.background = "radial-gradient(at " + mouseXpercentage + "% " + mouseYpercentage + "%, " + "rgb(100, 127, 214)" + ", " + "#D7C1E2" + ")";
+
   // `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, rgb(100, 127, 214), #724993)`;
-  console.log("2");
 };
-
-// onmousemove = function(e) {
-//   let mouseX = e.clientX;
-//   let mouseY = e.clientY;
-//     console.log("mouse location:", mouseX, mouseY)
-  
-//   let circleX = mouseX/document.body.clientWidth*100;
-//   let circleY = mouseY/document.body.clientHeight*100;
-
-//   gradientHero.style.background = `radial-gradient(at ${circleX}% ${circleY}%, rgb(100, 127, 214), #724993)`;
-
-//     // document.body.style.backgroundImage = "-webkit-radial-gradient(circle, #fff, #000)";
-// }
-
-//gallery image hover expand effect
-// let darkBoxVisible = false;
-
-// 		window.addEventListener('load', (event) => {
-// 			let images = document.querySelectorAll("img");
-// 			if(images !== null && images !== undefined && images.length > 0) {
-// 				images.forEach(function(img) {
-// 					img.addEventListener('click', (evt) => {
-// 						showDarkbox(img.src);
-// 					});
-// 				});
-// 			}
-// 		});
-
-// function showDarkbox(url) {
-//   if(!darkBoxVisible) {
-//     let x = (window.innerWidth - 1280) / 2;
-//     let y = window.scrollY + 50;
-
-//     // Create the darkBox
-//     var div = document.createElement("div");
-//     div.id = "darkbox";
-//     div.innerHTML = '<img class="darkboximg" src="'+url+'" />';
-//     document.body.appendChild(div);
-//     let box = document.getElementById("darkbox");
-//     box.style.left = x.toString()+"px";
-//     box.style.top = y.toString()+"px";
-//     box.style.height = 'auto';
-//     box.addEventListener('click', (event) => {
-//       // Remove it
-//       let element = document.getElementById("darkbox");
-//       element.parentNode.removeChild(element);
-
-//       darkBoxVisible = false;
-//     })
-
-//     darkBoxVisible = true;
-
-//   } else {
-//     // Remove it
-//     let element = document.getElementById("darkbox");
-//     element.parentNode.removeChild(element);
-
-//     darkBoxVisible = false;
-//   }
-// }
