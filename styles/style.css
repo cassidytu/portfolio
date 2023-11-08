@@ -481,7 +481,7 @@ li {
 .bentoBlock {
     border-radius: 10px;
     background-color: white;
-    padding: 32px;
+    padding: 32px !important;
 }
 
 #bentoTitles {
