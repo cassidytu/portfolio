@@ -109,10 +109,10 @@ td {
     text-decoration: none;
     text-align: center;
     display: inline;
-    width: 160px;
-    font-family: Fraunces;
-    font-size: 16pt;
-    font-weight: 600; 
+    width: 100px;
+    /* font-family: Fraunces; */
+    font-size: 14pt;
+    font-weight: 400; 
 }
   
 .navMenu a:hover {
@@ -437,11 +437,11 @@ figcaption {
     width: 100%;
     
     /*Fallback if gradeints don't work */
-    background: #D7C1E2;
+    background: #F7F6F3;
     /*Linear gradient... */
     background: 
     linear-gradient(to top, #F7F6F3 0.1, #F7F6F3 0.3),
-    radial-gradient(at center, rgb(100, 127, 214), #D7C1E2);
+    radial-gradient(at center, rgb(100, 127, 214), #F7F6F3);
       
 }
 
@@ -465,6 +465,15 @@ li {
     z-index: 9;
     width:100vw;
   }
+
+#aboutHeader {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 48px;
+}
 
 #bentoMenu {
     width:90%;
