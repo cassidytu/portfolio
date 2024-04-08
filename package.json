@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@yarnpkg/cli": "^4.1.1",
     "normalize.css": "^8.0.1"
   }
 }
