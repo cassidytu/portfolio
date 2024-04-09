@@ -1,7 +1,7 @@
 body{
     background-color: #F7F6F3;
     font-family: Figtree, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     color: #333333;
@@ -15,34 +15,36 @@ html {
 /* text*/
 h1 {
     font-family: Fraunces, serif;
-    font-style: normal;
-    font-size: 64px;
+    font-size: 48px;
+    font-weight: 500;
 }
 
 h2 {
-    font-family: Fraunces, serif;
+    font-family: Manrope, serif;
     font-style: normal;
         /* font-weight: 200; */
-    font-size: 48px;
+    font-size: 32px;
 }
 
 h3 {
-    font-family: Fraunces, sans-serif;
-    font-size: 1.75rem;
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
     font-weight: 600;
 }
 
 h4 {
-    font-family: Fraunces, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0%;
 }
 
 h5 {
-    font-family: Figtree;
+    font-family: Manrope;
     /* margin-bottom: -10px; */
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0%;
     /* text-transform: uppercase; */
     /* letter-spacing: 2px; */
 }
@@ -99,7 +101,7 @@ td {
 .navMenu {
     /* position: absolute; */
     margin-top: 4%;
-    /* left: 50%; */
+    margin-right: 2%;
     vertical-align: middle;
 }
   
@@ -128,10 +130,10 @@ td {
 }
 
 .centered{
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 button{
@@ -163,7 +165,7 @@ button:hover {
 .proj {
     grid-template-columns: 1.5fr 0fr 1fr;
     display: grid;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .projName {
@@ -196,7 +198,7 @@ figcaption {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    gap: 0;
+    gap: 64px;
 }
 
 .column1 {

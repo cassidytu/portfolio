@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "@yarnpkg/cli": "^4.1.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "staticrypt": "^3.4.0"
+  },
+  "devDependencies": {
+    "pagecrypt": "^6.1.1"
   }
 }
