@@ -1,0 +1,182 @@
+body{
+    background-color: #131313;
+    font-family: General Sans;
+    font-size: 14pt;
+    font-weight: lighter;
+    line-height: 24px;
+    color: #969696;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+/* text*/
+h1 {
+    font-family: General Sans;
+    font-size: 44pt;
+    font-weight: Semibold;
+    line-height: 1.25;
+    color: #C4C4C4;
+}
+
+h2 {
+    font-family: General Sans;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    color: #C4C4C4;
+}
+
+h3 {
+    font-family: General Sans;
+    font-size: 18pt;
+    font-weight: 400;
+    color: #969696;
+    line-height: 38px;
+}
+
+h4 {
+    font-family: General Sans;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #EAEAEA;
+    text-transform: uppercase;
+    line-height: 0%;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-family: General Sans;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #969696;
+    font-style:italic;
+}
+
+bolded {
+    color:#EAEAEA;
+}
+
+.centered{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+/* nav bar*/
+.navMenu {
+    /* position: absolute; */
+    margin-top: 4%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+  
+.navMenu a {
+    float: right;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    width: 100px;
+    /* font-family: Fraunces; */
+    font-size: 14pt;
+    font-weight: 400; 
+}
+  
+.navMenu a:hover {
+    color: #724993;
+    /* background-image:url('assets/stars.png'); */
+}
+
+#footer{
+    grid-area: footer;
+    margin-bottom:2%;
+    text-align: center;
+}
+
+.coverimg {
+    height: 100%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    border-radius: 20px;
+  }
+
+.callout {
+    background-color: rgb(120, 120, 128, 0.25);
+    border-radius: 10px;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 24px;
+    padding-bottom: 2px;
+    margin-bottom: 124px;
+}
+
+.column3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 64px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 64px;
+}
+
+button{
+    background-color: rgb(120, 120, 128, 0.25);
+    border-radius: 8px;
+    border-width: 0;
+    color: #d4b5ee;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color:#724993;
+    color: #F7F6F3;
+}
+
+#scrollButton {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5%;
+    right: 5%;
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    background-color:#724993;
+    color: #F7F6F3;
+    border-radius: 100px;
+    height:72px;
+    width: 72px;
+    font-size: 24pt;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    /* backface-visibility: hidden; */
+    perspective: 1000px;
+    animation-play-state: running;
+}
