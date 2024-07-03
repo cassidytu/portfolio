@@ -1,6 +1,6 @@
 body{
     background-color: #F7F6F3;
-    font-family: Figtree, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -227,7 +227,11 @@ figcaption {
     cursor: pointer; /* Add a mouse pointer on hover */
     background-color:#724993;
     color: #F7F6F3;
-  }
+    border-radius: 100px;
+    height:72px;
+    width: 72px;
+    font-size: 24pt;
+}
 
 .shake {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
