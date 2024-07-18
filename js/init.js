@@ -106,7 +106,7 @@ window.onscroll = function(ev) {
     for(var i = 0; i < upDivs.length; i++){
       var upDivs_pos = upDivs[i].offsetTop;
 		  var window_pos = window.pageYOffset;
-		  if(window_pos > upDivs_pos-100) {
+		  if(window_pos > upDivs_pos-50) {
 			  upDivs[i].classList.add('fade-in');
 		  }
     }
