@@ -604,4 +604,5 @@ img {
     grid-template-columns: 0.75fr 1fr;
     display: grid;
     gap: 10%;
+    padding-bottom: 6%;
 }
