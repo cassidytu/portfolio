@@ -599,3 +599,9 @@ li {
 img {
     border-radius: 10px;
 }
+
+#titleColumn {
+    grid-template-columns: 0.75fr 1fr;
+    display: grid;
+    gap: 10%;
+}
